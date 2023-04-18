@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="846a00e5-60c3-4cbd-b270-4eb17e0ab8c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/carga_de_dados/clientes.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/carga_de_dados/enderecos.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -110,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681132658553</updated>
-      <workItem from="1681822708503" duration="561000" />
+      <workItem from="1681822708503" duration="1778000" />
     </task>
     <servers />
   </component>
