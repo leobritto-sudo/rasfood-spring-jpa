@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="846a00e5-60c3-4cbd-b270-4eb17e0ab8c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fde8ee8-9063-443e-9093-5b0204792d06.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9fde8ee8-9063-443e-9093-5b0204792d06.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/entity/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/ClienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/controller/ClienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/entity/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/entity/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/repository/ClienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/repository/ClienteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/CardapioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/CardapioRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -47,6 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2OEjV639WX6dbsqmEJHafyTRV97" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -124,6 +121,7 @@
       <workItem from="1681909996492" duration="3958000" />
       <workItem from="1681995062024" duration="656000" />
       <workItem from="1682027775178" duration="294000" />
+      <workItem from="1683031402537" duration="1796000" />
     </task>
     <servers />
   </component>
