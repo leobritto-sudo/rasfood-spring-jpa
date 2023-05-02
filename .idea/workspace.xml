@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="846a00e5-60c3-4cbd-b270-4eb17e0ab8c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fde8ee8-9063-443e-9093-5b0204792d06.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9fde8ee8-9063-443e-9093-5b0204792d06.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/CardapioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/CardapioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/CardapioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/CardapioController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +77,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\RasmooJava\Spring Data JPA\rasfood-api\src\main\java\com\rasmoo\api\rasfood\entity" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rasmoo.api.rasfood.controller" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.RasfoodApiApplication">
     <configuration name="RasfoodApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -121,22 +126,11 @@
       <workItem from="1681909996492" duration="3958000" />
       <workItem from="1681995062024" duration="656000" />
       <workItem from="1682027775178" duration="294000" />
-      <workItem from="1683031402537" duration="1796000" />
+      <workItem from="1683031402537" duration="4036000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
