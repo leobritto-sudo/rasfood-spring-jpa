@@ -5,6 +5,12 @@
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes />
+  </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="da48c495-a102-47bc-8d51-30031aa1744b">
       <console name="@localhost" type="STANDARD" schema="mysql" session="Main"><![CDATA[create database rasfood;]]></console>
