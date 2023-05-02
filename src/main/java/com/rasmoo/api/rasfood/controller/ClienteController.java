@@ -1,15 +1,14 @@
 package com.rasmoo.api.rasfood.controller;
 
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rasmoo.api.rasfood.entity.Cliente;
 import com.rasmoo.api.rasfood.entity.ClienteId;
 import com.rasmoo.api.rasfood.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,26 +16,38 @@ import java.util.Optional;
 @RequestMapping(value = "/clientes")
 @RestController
 public class ClienteController {
+
     @Autowired
-    ClienteRepository clienteRepository;
+    private ClienteRepository clienteRepository;
+
+    @Autowired
+    private ObjectMapper objectMapper;
 
     @GetMapping(value = "/consultar")
-    private ResponseEntity<List<Cliente>> consultarClientes() {
+    public ResponseEntity<List<Cliente>> consultarClientes() {
         return ResponseEntity.status(HttpStatus.OK).body(clienteRepository.findAll());
     }
 
-    @GetMapping(value = "/consultar/{email}/{cpf}")
-    private ResponseEntity<Cliente> consultarPorEmailCpf(
-            @PathVariable(value = "email") String email,
-            @PathVariable(value = "cpf") String cpf) {
-        
-        ClienteId clienteId = new ClienteId(email, cpf);
-        Optional<Cliente> cliente = clienteRepository.findById(clienteId);
+    @GetMapping(value = "/consultar", params = {"email", "cpf"})
+    public ResponseEntity<Cliente> consultarPorEmailCpf(
+            @RequestParam(required = false) String email,
+            @RequestParam(required = false) String cpf) {
 
-        if(cliente.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        return clienteRepository.findById(new ClienteId(email, cpf))
+                .map(value -> ResponseEntity.status(HttpStatus.OK).body(value))
+                .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).body(null));
+    }
+
+    @PatchMapping(value = "/atualizar", params = {"id"})
+    public ResponseEntity<Cliente> atualizarCliente(
+            @RequestParam String id, @RequestBody Cliente cliente) throws JsonMappingException {
+
+        Optional<Cliente> clienteFound = clienteRepository.findByEmailOrCpf(id);
+        if (clienteFound.isPresent()) {
+            objectMapper.updateValue(clienteFound.get(), cliente);
+            return ResponseEntity.status(HttpStatus.OK).body(clienteRepository.save(clienteFound.get()));
         }
 
-        return ResponseEntity.status(HttpStatus.OK).body(cliente.get());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
     }
 }

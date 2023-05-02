@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="846a00e5-60c3-4cbd-b270-4eb17e0ab8c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fde8ee8-9063-443e-9093-5b0204792d06.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9fde8ee8-9063-443e-9093-5b0204792d06.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/entity/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/entity/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/entity/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/entity/Endereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/entity/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/controller/ClienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/entity/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/entity/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/repository/ClienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/repository/ClienteRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,25 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/RasmooJava/Spring Data JPA/rasfood-api",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/RasmooJava/Spring Data JPA/rasfood-api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b590726777fb38858243c9032a3fafe4&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\RasmooJava\Spring Data JPA\rasfood-api\src\main\java\com\rasmoo\api\rasfood" />
@@ -114,11 +119,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681132658553</updated>
-      <workItem from="1681822708503" duration="2979000" />
+      <workItem from="1681822708503" duration="3164000" />
+      <workItem from="1681844505557" duration="848000" />
+      <workItem from="1681909996492" duration="3958000" />
+      <workItem from="1681995062024" duration="656000" />
+      <workItem from="1682027775178" duration="294000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
