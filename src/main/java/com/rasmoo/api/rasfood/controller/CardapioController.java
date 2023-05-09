@@ -2,6 +2,7 @@ package com.rasmoo.api.rasfood.controller;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.rasmoo.api.rasfood.dto.CardapioDTO;
 import com.rasmoo.api.rasfood.entity.Cardapio;
 import com.rasmoo.api.rasfood.repository.CardapioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,11 @@ public class CardapioController {
     @GetMapping(value = "/consultar", params = "categoriaId")
     public ResponseEntity<List<Cardapio>> consultarCardapiosPorCategoria(@RequestParam(required = false) Integer categoriaId) {
         return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAllByCategoria(categoriaId));
+    }
+
+    @GetMapping(value = "/consultar", params = "nome")
+    public ResponseEntity<List<CardapioDTO>> consultarCardapiosPorNome(@RequestParam(required = false) String nome) {
+        return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAllByName(nome));
     }
 
     @GetMapping(value = "/consultar", params = "id")
