@@ -28,6 +28,11 @@ public class CardapioController {
         return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAll());
     }
 
+    @GetMapping(value = "/consultar", params = "categoriaId")
+    public ResponseEntity<List<Cardapio>> consultarCardapiosPorCategoria(@RequestParam(required = false) Integer categoriaId) {
+        return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAllByCategoria(categoriaId));
+    }
+
     @GetMapping(value = "/consultar", params = "id")
     public ResponseEntity<Cardapio> consultarPorId(
             @RequestParam(required = false) Integer id) {
