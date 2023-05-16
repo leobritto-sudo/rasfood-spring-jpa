@@ -6,6 +6,9 @@ import com.rasmoo.api.rasfood.entity.Cliente;
 import com.rasmoo.api.rasfood.entity.ClienteId;
 import com.rasmoo.api.rasfood.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,8 +27,12 @@ public class ClienteController {
     private ObjectMapper objectMapper;
 
     @GetMapping(value = "/consultar")
-    public ResponseEntity<List<Cliente>> consultarClientes() {
-        return ResponseEntity.status(HttpStatus.OK).body(clienteRepository.findAll());
+    public ResponseEntity<Page<Cliente>> consultarClientes(
+            @RequestParam("page") Integer page,
+            @RequestParam("size") Integer size
+    ) {
+        Pageable pageable = PageRequest.of(page, size);
+        return ResponseEntity.status(HttpStatus.OK).body(clienteRepository.findAll(pageable));
     }
 
     @GetMapping(value = "/consultar", params = {"email", "cpf"})

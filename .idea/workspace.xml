@@ -7,7 +7,10 @@
     <list default="true" id="846a00e5-60c3-4cbd-b270-4eb17e0ab8c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/CardapioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/CardapioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/CardapioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/repository/CardapioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/controller/CardapioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/controller/CardapioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/repository/CardapioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rasmoo/api/rasfood/repository/CardapioRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,22 +129,12 @@
       <workItem from="1681995062024" duration="656000" />
       <workItem from="1682027775178" duration="294000" />
       <workItem from="1683031402537" duration="7099000" />
-      <workItem from="1683636970490" duration="1966000" />
+      <workItem from="1683636970490" duration="2568000" />
+      <workItem from="1684242616291" duration="3663000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/rasmoo/api/rasfood/controller/CardapioController.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

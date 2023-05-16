@@ -6,6 +6,10 @@ import com.rasmoo.api.rasfood.dto.CardapioDTO;
 import com.rasmoo.api.rasfood.entity.Cardapio;
 import com.rasmoo.api.rasfood.repository.CardapioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,18 +29,32 @@ public class CardapioController {
     private ObjectMapper objectMapper;
 
     @GetMapping(value = "/consultar")
-    public ResponseEntity<List<Cardapio>> consultarCardapios() {
-        return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAll());
+    public ResponseEntity<Page<Cardapio>> consultarCardapios(
+            @RequestParam("page") Integer page,
+            @RequestParam("size") Integer size
+            ) {
+        Pageable pageable = PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "nome"));
+        return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAll(pageable));
     }
 
     @GetMapping(value = "/consultar", params = "categoriaId")
-    public ResponseEntity<List<Cardapio>> consultarCardapiosPorCategoria(@RequestParam(required = false) Integer categoriaId) {
-        return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAllByCategoria(categoriaId));
+    public ResponseEntity<Page<Cardapio>> consultarCardapiosPorCategoria(
+            @RequestParam(required = false) Integer categoriaId,
+            @RequestParam("page") Integer page,
+            @RequestParam("size") Integer size
+    ) {
+        Pageable pageable = PageRequest.of(page, size);
+        return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAllByCategoria(categoriaId, pageable));
     }
 
     @GetMapping(value = "/consultar", params = "nome")
-    public ResponseEntity<List<CardapioDTO>> consultarCardapiosPorNome(@RequestParam(required = false) String nome) {
-        return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAllByName(nome));
+    public ResponseEntity<Page<CardapioDTO>> consultarCardapiosPorNome(
+            @RequestParam(required = false) String nome,
+            @RequestParam("page") Integer page,
+            @RequestParam("size") Integer size
+    ) {
+        Pageable pageable = PageRequest.of(page, size);
+        return ResponseEntity.status(HttpStatus.OK).body(cardapioRepository.findAllByName(nome, pageable));
     }
 
     @GetMapping(value = "/consultar", params = "id")
